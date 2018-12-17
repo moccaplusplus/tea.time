@@ -1,0 +1,9 @@
+{
+  "spec_dir": "build",
+  "spec_files": [
+    "./test/**/*[sS]pec.js"
+  ],
+  "helpers": [],
+  "oneFailurePerSpec": true,
+  "configure": "random"
+}

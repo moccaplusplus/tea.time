@@ -1,0 +1,28 @@
+{
+  "name": "ts-dateformat",
+  "version": "1.0.0",
+  "description": "Simple Date formating library",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf build dist",
+    "compile": "npm run clean && tsc",
+    "build": "npm run compile && mkdir dist && rsync -r --exclude=*.js.map ./build/main ./dist",
+    "testCompile": "npm run clean && tsc -p ./tsconfig-test.json",
+    "test": "npm run testCompile && node node_modules/jasmine/bin/jasmine --config=jasmine.conf.json",
+    "lint": "tslint -c ./tslint.json --project ./tsconfig.json --force --format verbose"
+  },
+  "author": "Tomasz Gawel <moccaplusplus@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jasmine": "^2.8.11",
+    "@types/node": "^10.12.8",
+    "jasmine": "^3.3.0",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6"
+  },
+  "dependencies": {
+    "@types/jasmine": "^2.8.11",
+    "@types/node": "^10.12.8",
+    "jasmine": "^3.3.0"
+  }
+}
