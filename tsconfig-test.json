@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "sourceMap": true,
+    "types": [
+      "jasmine",
+      "node"
+    ]
+  },
+  "include": [
+    "./src/test/**/*"
+  ],
+  "exclude": []
+}
